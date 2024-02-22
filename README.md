@@ -1,86 +1,81 @@
-[DEMO](https://tsjensen.github.io/fuse-core/)
+<div align="center">
 
-# Fuse Core
+  # Chirpy Jekyll Theme
 
-**A lightweight Jekyll theme for single-page personal websites.**
+  A minimal, responsive, and feature-rich Jekyll theme for technical writing.
 
-[![Screenshot](README.pic1.jpg)](https://tsjensen.github.io/fuse-core/)
+  [![Gem Version](https://img.shields.io/gem/v/jekyll-theme-chirpy?color=brightgreen)][gem]&nbsp;
+  [![CI](https://github.com/cotes2020/jekyll-theme-chirpy/actions/workflows/ci.yml/badge.svg?branch=master&event=push)][ci]&nbsp;
+  [![Codacy Badge](https://app.codacy.com/project/badge/Grade/4e556876a3c54d5e8f2d2857c4f43894)][codacy]&nbsp;
+  [![GitHub license](https://img.shields.io/github/license/cotes2020/jekyll-theme-chirpy.svg)][license]&nbsp;
+  [![996.icu](https://img.shields.io/badge/link-996.icu-%23FF4D5B.svg)](https://996.icu)
 
-This [Jekyll](https://jekyllrb.com/) theme is for you if you need a personal website that simply
-summarizes the links to your social media profiles and external content.
+  [**Live Demo** →][demo]
 
-- *responsive* - adapts to all screen sizes
-- *mobile-friendly*
-- *lightweight* - no JavaScript (except for Google Analytics, if enabled)
-- *easy to configure* - no HTML knowledge required, just change *_config.yml* ([step-by-step guide](https://github.com/tsjensen/fuse-core/wiki/Setup-Instructions))
-- *fast* - All third party components loaded via their CDN (with
-  [subresource integrity](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity)),
-  so most resources are already cached from visits to other websites.
-- Optional Google Analytics support, with IP anonymization and cookie consent popup
-  (optional, but these things are helpful to comply with EU data protection laws).
-  You'll need to have a Google Analytics account set up for this to work, of course.  
-  We even generate statistics on how often people click on your specific social media links, for example:  
-  ![GA Outbound Stats](README.pic2.png)
+  [![Devices Mockup](https://chirpy-img.netlify.app/commons/devices-mockup.png)][demo]
 
+</div>
 
-## Performance Hint
+## Features
 
-It is a good idea to increase the cache lifetime of the background image, so that public proxies and users' browsers
-do not need to download it every time. GitHub Pages does not support cache control, but if *your* web server supports
-`.htaccess` files, you may want to add one to the *images* folder like so:
+- Dark / Light Theme Mode
+- Localized UI language
+- Pinned Posts on Home Page
+- Hierarchical Categories
+- Trending Tags
+- Table of Contents
+- Last Modified Date
+- Syntax Highlighting
+- Mathematical Expressions
+- Mermaid Diagrams & Flowcharts
+- Dark / Light Mode Images
+- Embed Videos
+- Disqus / Giscus / Utterances Comments
+- Built-in Search
+- Atom Feeds
+- PWA
+- Google Analytics / GoatCounter
+- SEO & Performance Optimization
 
-```ApacheConf
-# Cache the large background image for 1 year
-<IfModule mod_headers.c>
-    <Files "background.jpg">
-        Header unset ETag
-        Header set Cache-Control "public, max-age=31536000"
-    </Files>
-</IfModule>
-```
+## Documentation
 
+To learn how to use, develop, and upgrade the project, please refer to the [Wiki][wiki].
 
-## License
+## Contributing
 
-The *Fuse Core* theme is free to use and modify under the terms of the
-[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/) license.
-
-## Ancestry
-
-The visual design for this theme is heavily inspired by [Dashingcode](https://github.com/dashingcode)'s
-[front-cover](https://github.com/dashingcode/front-cover). Big thank you, it looks awesome!
-
-However, *Fuse Core* is a complete reimplementation, which makes it very different on the inside.
-There are many improvements big and small over front-cover, making *Fuse Core* a kind of "front-cover 2.0" or
-"front-cover Plus":
-
-- Complete configuration via *_config.yml*, including order of links or adding of new links.
-- Ability to show extra HTML below the links, for any crisp statement that you deem necessary to add.
-- Use of Bootstrap for responsive design. This gives us supreme browser compatibility and ease of maintenance,
-  because a myriad of problems are already handled by the folks at Bootstrap.
-- [SASS](https://sass-lang.com/) styling instead of raw CSS
-- Up-to-date libraries, especially Font Awesome&nbsp;5.
-- Support for [Google Analytics ](https://analytics.google.com/analytics/web/), including tracking of outbound links
-  (so you'll know which social media profiles people clicked on), and some legal details such as IP anonymization
-  and cookie consent popup (all optional).
-- Search engine control via configurable meta tags
-- Responsive sticky footer
-
+Contributions (_pull requests_, _issues_, and _discussions_) are what make the open-source community such an amazing place
+to learn, inspire, and create. Any contributions you make are greatly appreciated.
+For details, see the "[Contributing Guidelines][contribute-guide]".
 
 ## Credits
 
-This theme draws upon the following work by others:
+### Contributors
 
-- Visual appearance from the [front-cover](https://github.com/dashingcode/front-cover) theme by Dashingcode under
-  [MIT license](https://github.com/dashingcode/front-cover/blob/5fb173ed1b130a1414b8f839feea6d4e97cbd9b4/LICENSE).
-- All icons are provided by [Font Awesome](https://fontawesome.com/) under
-  [SIL OFL](https://fontawesome.com/license) license.  
-  The [star icon](https://fontawesome.com/icons/star?style=solid) used as dummy favicon is provided
-  by Font Awesome under [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/) license.
-- The [background image](https://pxhere.com/en/photo/792989) is used under
-  [CC0 Public Domain](https://creativecommons.org/publicdomain/zero/1.0/) license.
-- The [Open Sans](https://fonts.google.com/specimen/Open+Sans) font by Steve Matteson is used under
-  [Apache 2.0](http://www.apache.org/licenses/LICENSE-2.0) license.
-- The [Bootstrap](https://getbootstrap.com/) framework is used under
-  [MIT](https://github.com/twbs/bootstrap/blob/9c469cd0e8abaac19c163622ed68b6783dfa366c/LICENSE) license.
-- The [dummy avatar image](images/avatar.svg) was generated using [TinyGraphs](http://www.tinygraphs.com/).
+Thanks to [all the contributors][contributors] involved in the development of the project!
+
+[![all-contributors](https://contrib.rocks/image?repo=cotes2020/jekyll-theme-chirpy&columns=16)][contributors]
+<sub> —— Made with [contrib.rocks](https://contrib.rocks)</sub>
+
+### Third-Party Assets
+
+This project is built on the [Jekyll][jekyllrb] ecosystem and some [great libraries][lib], and is developed using [VS Code][vscode] as well as tools provided by [JetBrains][jetbrains] under a non-commercial open-source software license.
+
+The avatar and favicon for the project's website are from [ClipartMAX][clipartmax].
+
+## License
+
+This project is published under [MIT License][license].
+
+[gem]: https://rubygems.org/gems/jekyll-theme-chirpy
+[ci]: https://github.com/cotes2020/jekyll-theme-chirpy/actions/workflows/ci.yml?query=event%3Apush+branch%3Amaster
+[codacy]: https://app.codacy.com/gh/cotes2020/jekyll-theme-chirpy/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade
+[license]: https://github.com/cotes2020/jekyll-theme-chirpy/blob/master/LICENSE
+[jekyllrb]: https://jekyllrb.com/
+[clipartmax]: https://www.clipartmax.com/middle/m2i8b1m2K9Z5m2K9_ant-clipart-childrens-ant-cute/
+[demo]: https://cotes2020.github.io/chirpy-demo/
+[wiki]: https://github.com/cotes2020/jekyll-theme-chirpy/wiki
+[contribute-guide]: https://github.com/cotes2020/jekyll-theme-chirpy/blob/master/docs/CONTRIBUTING.md
+[contributors]: https://github.com/cotes2020/jekyll-theme-chirpy/graphs/contributors
+[lib]: https://github.com/cotes2020/chirpy-static-assets
+[vscode]: https://code.visualstudio.com/
+[jetbrains]: https://www.jetbrains.com/?from=jekyll-theme-chirpy
